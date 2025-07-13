@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lê Xuân Việt - Backend Developer CV</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-color: #2c3e50; /* Màu xám xanh đậm chuyên nghiệp */
+            --secondary-color: #3498db; /* Màu xanh dương làm điểm nhấn */
+            --text-color: #34495e;
+            --light-gray: #ecf0f1;
+            --border-color: #bdc3c7;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f4f4f4;
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1020px;
+            margin: 30px auto;
+            background: #fff;
+            display: flex;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+        }
+
+        .sidebar {
+            background: var(--primary-color);
+            color: #fff;
+            padding: 30px;
+            width: 35%;
+        }
+
+        .sidebar h1 {
+            font-size: 28px;
+            text-transform: uppercase;
+            margin-bottom: 5px;
+            color: #fff;
+        }
+
+        .sidebar h2 {
+            font-size: 18px;
+            font-weight: 500;
+            margin-bottom: 30px;
+            color: var(--secondary-color);
+        }
+
+        .sidebar h3 {
+            font-size: 16px;
+            margin-bottom: 10px;
+            border-bottom: 2px solid var(--secondary-color);
+            padding-bottom: 5px;
+            text-transform: uppercase;
+        }
+
+        .contact-info ul {
+            list-style: none;
+        }
+
+        .contact-info li {
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+        }
+
+        .contact-info i {
+            width: 20px;
+            margin-right: 10px;
+            color: var(--secondary-color);
+        }
+
+        .contact-info a {
+            color: #fff;
+            text-decoration: none;
+            word-break: break-all;
+        }
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+
+        .section {
+            margin-bottom: 30px;
+        }
+
+        .skills-list {
+            list-style: none;
+            padding-left: 5px;
+        }
+        
+        .skills-list li {
+            background: rgba(255,255,255,0.1);
+            padding: 2px 8px;
+            border-radius: 4px;
+            margin-bottom: 5px;
+            font-size: 14px;
+        }
+        
+        .skills-list strong {
+            color: var(--secondary-color);
+        }
+
+
+        .main-content {
+            padding: 30px;
+            width: 65%;
+        }
+
+        .main-content h2 {
+            font-size: 20px;
+            color: var(--primary-color);
+            border-bottom: 3px solid var(--primary-color);
+            padding-bottom: 5px;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+        }
+
+        .job {
+            margin-bottom: 25px;
+        }
+
+        .job-header h3 {
+            font-size: 18px;
+            color: var(--secondary-color);
+            font-weight: 700;
+        }
+        .job-header p {
+            font-style: italic;
+            color: #7f8c8d;
+            margin-bottom: 10px;
+        }
+
+        .project {
+            margin-bottom: 20px;
+            padding-left: 15px;
+            border-left: 2px solid var(--light-gray);
+        }
+        
+        .project h4 {
+            font-size: 16px;
+            font-weight: 700;
+            color: var(--primary-color);
+        }
+
+        .project ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+
+        .project li {
+            margin-bottom: 5px;
+            font-size: 14px;
+        }
+        
+        .tech-stack {
+            margin-top: 10px;
+            font-size: 13px;
+        }
+        .tech-stack span {
+            display: inline-block;
+            background: var(--light-gray);
+            padding: 2px 8px;
+            margin: 2px;
+            border-radius: 4px;
+            color: var(--primary-color);
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+                margin: 0;
+            }
+            .sidebar, .main-content {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- ==== CỘT TRÁI (SIDEBAR) ==== -->
+        <aside class="sidebar">
+            <header>
+                <h1>LÊ XUÂN VIỆT</h1>
+                <h2>Backend Developer | Odoo Developer</h2>
+            </header>
+
+            <section class="section contact-info">
+                <h3>Liên hệ</h3>
+                <ul>
+                    <li><i class="fas fa-phone"></i><a href="tel:0389420092">0389 420 092</a></li>
+                    <li><i class="fas fa-envelope"></i><a href="mailto:vietlx.it@gmail.com">vietlx.it@gmail.com</a></li>
+                    <li><i class="fab fa-linkedin"></i><a href="https://linkedin.com/in/vietlx-it" target="_blank">linkedin.com/in/vietlx-it</a></li>
+                    <li><i class="fab fa-github"></i><a href="https://github.com/vietlx-it" target="_blank">github.com/vietlx-it</a></li>
+                </ul>
+            </section>
+
+            <section class="section">
+                <h3>Tóm tắt</h3>
+                <p>
+                    Backend Developer với gần 4 năm kinh nghiệm thực chiến trong lĩnh vực ERP Odoo, hệ thống microservices (Python Flask, Fastapi) và triển khai trên AWS.
+                    Chuyên sâu xây dựng module Odoo phức tạp, tích hợp với hệ thống IoT/AI.
+                    Đào tạo và dẫn dắt đội nhóm nhỏ. Tối ưu hệ thống xử lý dữ liệu lớn (hàng chục triệu bản ghi) với Postgresql.
+                </p>
+            </section>
+
+            <section class="section">
+                <h3>Kỹ năng</h3>
+                <ul class="skills-list">
+                    <li><strong>Ngôn ngữ:</strong> Python, PHP, JavaScript</li>
+                    <li><strong>Frameworks:</strong> FastAPI, Flask, Odoo, Laravel</li>
+                    <li><strong>Cơ sở dữ liệu:</strong> PostgreSQL, MongoDB, Redis</li>
+                    <li><strong>DevOps & Cloud:</strong> AWS (EC2, ECS, ECR, RDS, S3, Cognito), Docker, Nginx</li>
+                    <li><strong>Kiến trúc:</strong> Microservices, RESTful APIs, Message Queues (Kafka)</li>
+                    <li><strong>Kỹ năng mềm:</strong> Giao tiếp, Làm việc nhóm, Giải quyết vấn đề, Tư duy phản biện, Team Leadership & Mentoring</li>
+                </ul>
+            </section>
+
+            <section class="section">
+                <h3>Học vấn</h3>
+                <h4>Đại học Khoa học Huế</h4>
+                <p>Cử nhân Công nghệ Thông tin (2017 – 2021)</p>
+            </section>
+        </aside>
+
+        <!-- ==== CỘT PHẢI (MAIN CONTENT) ==== -->
+        <main class="main-content">
+            <h2>Kinh nghiệm làm việc</h2>
+            
+            <div class="job">
+                <div class="job-header">
+                    <h3>D-Soft Joint Stock Company, Đà Nẵng</h3>
+                    <p>Backend Developer | 11/2021 – Hiện tại</p>
+                </div>
+
+                <div class="project">
+                    <h4>Dự án: Prima Pro - Nền tảng Bất động sản (04/2025 – Hiện tại)</h4>
+                    <ul>
+                        <li>Thiết kế các microservices cốt lõi (Authentication, Authorization, API Gateway) bằng FastAPI, làm nền tảng cho cả web và mobile app.</li>
+                        <li>Triển khai và tối ưu hoá môi trường phát triển (Docker, Debug, Setup ENV, Source code), quy trình CI/CD hoàn chỉnh, tổ chức review code và vận hành hệ thống.</li>
+                        <li>Kết nối Kafka để xử lý các luồng dữ liệu bất đồng bộ, tăng khả năng mở rộng và giảm độ trễ trong giao tiếp giữa các services.</li>
+                        <li>Tích hợp AWS Cognito cho việc xác thực người dùng an toàn và hiệu quả.</li>
+                    </ul>
+                    <p class="tech-stack">
+                        <strong>Tech stack:</strong>
+                        <span>FastAPI</span> <span>PostgreSQL</span> <span>MongoDB</span> <span>Kafka</span> <span>Redis</span> <span>AWS (Cognito, S3)</span> <span>Docker</span>
+                    </p>
+                </div>
+
+                <div class="project">
+                    <h4>Dự án: Facelog - Hệ thống Chấm công nhận diện khuôn mặt và dấu vân tay (04/2024 – 10/2024)</h4>
+                    <ul>
+                        <li>Dẫn dắt đội 6 thành viên (dev và interns), thiết lập quy trình đào tạo và phân bổ nhiệm vụ cho các thành viên, tổ chức review code đảm bảo chất lượng cao, góp phần đẩy nhanh tiến độ dự án trước thời hạn.</li>
+                        <li>Thiết kế và phát triển module Odoo tùy chỉnh, kết nối với hệ thống AI/IoT để xử lý dữ liệu nhận diện khuôn mặt và vân tay theo thời gian thực cho 350+ nhân viên tại 3 công ty khách hàng và nội bộ.</li>
+                        <li>Xây dựng và vận hành hệ thống, giám sát đảm bảo uptime 99.9%</li>
+                        <li>Thành tựu: Tích hợp các module Odoo với công nghệ AI/IoT, xây dựng một đội ngũ intern có năng lực về Odoo từ con số không.</li>
+                    </ul>
+                    <p class="tech-stack">
+                        <strong>Tech stack:</strong>
+                        <span>Odoo 15</span> <span>Python</span> <span>Javascript</span> <span>XML</span> <span>PostgreSQL</span>
+                    </p>
+                </div>
+
+                <div class="project">
+                    <h4>Dự án: DDM - Hệ thống Theo dõi & Phân tích Hành vi Người dùng (04/2023 – 03/2024)</h4>
+                    <ul>
+                        <li>Phát triển và bảo trì hệ thống microservices (Flask, FastAPI) thu thập và xử lý hàng chục triệu bản ghi cho khách hàng lớn (Panasonic).</li>
+                        <li>Tối ưu hóa thành công các truy vấn PostgreSQL phức tạp, giảm 70% thời gian phản hồi của các API phân tích.</li>
+                        <li>Tái cấu trúc các tác vụ nền (Celery), giúp giảm 30% tài nguyên CPU sử dụng và tăng tốc độ xử lý batch job.</li>
+                        <li>Xây dựng và duy trì hệ thống trên AWS sử dụng EC2, ECS, ECR, RDS, Redis tăng cường khả năng chịu tải và độ sẵn sàng cao.</li>
+                    </ul>
+                    <p class="tech-stack">
+                        <strong>Tech stack:</strong>
+                        <span>Python</span> <span>Flask</span> <span>PostgreSQL</span> <span>Celery</span> <span>AWS (EC2,ECS,ECR,RDS)</span> <span>Docker</span>
+                    </p>
+                </div>
+
+                <div class="project">
+                    <h4>Dự án: D-Soft Task Management Tool (11/2021 – 03/2023)</h4>
+                    <ul>
+                        <li>Nghiên cứu và tìm hiểu về nghiệp vụ của hệ thống odoo, đọc hiểu business các module có sẵn (Project, Time off, Employee, Payroll, Timesheet...)</li>
+                        <li>Triển khai cho toàn bộ công ty 150+ nhân viên, tối ưu quy trình quản lý nhân sự và dự án, giảm 50% thời gian xử lý lương thủ công.</li>
+                        <li>Nghiên cứu và đi sâu vào các phần cốt lõi của hệ thống nhằm cá nhân hóa và tạo mới các tính năng, cải thiện giao diện mặc định của Odoo.</li>
+                        <li>Phối hợp phát hành hệ thống, quản lý git và phát hành các tính năng lên production.</li>
+                    </ul>
+                     <p class="tech-stack">
+                        <strong>Tech stack:</strong>
+                        <span>Odoo 15</span> <span>Python</span> <span>PostgreSQL</span> <span>JavaScript</span> <span>XML</span>
+                    </p>
+                </div>
+
+            </div>
+
+        </main>
+    </div>
+
+</body>
+</html>
